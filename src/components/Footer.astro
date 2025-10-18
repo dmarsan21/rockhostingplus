@@ -1,0 +1,56 @@
+---
+// src/components/Footer.astro
+---
+<footer class="bg-gray-800 text-neutral-300 text-sm mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+    
+    <!-- Branding -->
+    <div>
+      <a href="/">
+        <img src="/images/rock-logo-footer.png" alt="Rock Hosting Plus" class="w-30" />
+      </a>
+      <p class="leading-relaxed text-neutral-200 mt-2">
+        Soluciones de hosting seguras, rápidas y escalables. Tu web en buenas manos.
+      </p>
+      <ul class="mt-4 space-y-1 text-neutral-400 text-sm">
+        <li>Puebla, México</li>
+        <li><a href="mailto:contacto@rockhosting.mx" class="hover:text-neutral-100 transition">contacto@rockhosting.mx</a></li>
+        <li><a href="tel:+522222222222" class="hover:text-neutral-100 transition">+52 222 222 2222</a></li>
+      </ul>
+    </div>
+
+    <!-- Hosting -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Hosting</h3>
+      <ul class="space-y-2">
+        <li><a href="/hosting" class="hover:text-neutral-100 transition-colors duration-200">Web Hosting</a></li>
+        <li><a href="/reseller" class="hover:text-neutral-100 transition-colors duration-200">Reseller Hosting</a></li>
+        <li><a href="/wordpress" class="hover:text-neutral-100 transition-colors duration-200">WordPress Hosting</a></li>
+      </ul>
+    </div>
+
+    <!-- Dominios -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Dominios</h3>
+      <ul class="space-y-2">
+        <li><a href="/dominios/comprar" class="hover:text-neutral-100 transition-colors duration-200">Comprar Dominio</a></li>
+        <li><a href="/dominios/transferir" class="hover:text-neutral-100 transition-colors duration-200">Transferir Dominio</a></li>
+      </ul>
+    </div>
+
+    <!-- Navegación -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Empresa</h3>
+      <ul class="space-y-2">
+        <li><a href="/" class="hover:text-neutral-100 transition-colors duration-200">Inicio</a></li>
+        <li><a href="/planes" class="hover:text-neutral-100 transition-colors duration-200">Planes</a></li>
+        <li><a href="/soporte" class="hover:text-neutral-100 transition-colors duration-200">Soporte</a></li>
+        <li><a href="/login" class="hover:text-neutral-100 transition-colors duration-200">Acceso WHMCS</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-neutral-600 mt-1 pt-6 pb-6 text-center text-xs text-neutral-400">
+    &copy; {new Date().getFullYear()} Rock Hosting Plus. Todos los derechos reservados | Diseñado por <a href="https://daviddevmx.com/" class="hover:text-neutral-100 transition">DEVMARSAN</a>.
+  </div>
+</footer>

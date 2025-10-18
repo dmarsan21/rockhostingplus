@@ -1,0 +1,39 @@
+---
+---
+
+<section class="bg-gray-50 py-16">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Busca tu dominio ideal</h2>
+    <p class="text-gray-600 mb-8">Escribe el nombre que quieres para tu sitio y te llevamos al buscador oficial.</p>
+    <form id="domainForm" class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <input
+        type="text"
+        id="domainInput"
+        placeholder="tusitio.com"
+        class="w-full sm:w-2/3 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+        required
+      />
+      <button
+        type="submit"
+        class="bg-orange-600 text-white px-6 py-3 rounded-md hover:bg-orange-700 transition-colors"
+      >
+        Buscar
+      </button>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('domainForm');
+      form?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const input = document.getElementById('domainInput') as HTMLInputElement | null;
+        const domain = input?.value.trim();
+        if (domain) {
+          const url = `https://rockhostingplus.com/billing/cart.php?a=add&domain=register&query=${encodeURIComponent(domain)}`;
+          window.open(url, '_blank');
+        }
+      });
+    });
+  </script>
+</section>
