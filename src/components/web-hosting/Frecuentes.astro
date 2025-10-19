@@ -1,0 +1,45 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const preguntas = [
+  {
+    icon: 'mdi:help-circle-outline',
+    pregunta: '¿Qué es el Hosting y cómo funciona?',
+    respuesta: 'Es un servicio que permite almacenar los archivos de tu sitio web en un servidor y hacerlos accesibles desde cualquier navegador.'
+  },
+  {
+    icon: 'mdi:web',
+    pregunta: '¿Qué es un dominio web?',
+    respuesta: 'Es una dirección única y fácil de recordar que permite acceder a tu sitio en internet. Ejemplo: rockhosting.mx.'
+  },
+  {
+    icon: 'mdi:folder-cog-outline',
+    pregunta: '¿Qué es cPanel?',
+    respuesta: 'Es un panel de control intuitivo que te permite administrar tu sitio, correos, bases de datos y más sin conocimientos técnicos avanzados.'
+  },
+  {
+    icon: 'mdi:lock-outline',
+    pregunta: '¿Qué es un certificado SSL?',
+    respuesta: 'Es un archivo que autentica tu sitio y permite una conexión segura y encriptada. Mejora la seguridad y el posicionamiento en buscadores.'
+  }
+]
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4">Preguntas frecuentes</h2>
+    <p class="text-lg text-gray-700 text-center mb-12">Resolvemos tus dudas más comunes sobre nuestros servicios de hosting.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {preguntas.map(({ icon, pregunta, respuesta }) => (
+        <div class="border-l-4 border-orange-500 bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+          <div class="flex items-center gap-4 mb-4">
+            <Icon name={icon} class="text-orange-500 text-3xl" />
+            <h3 class="text-xl font-semibold text-gray-900">{pregunta}</h3>
+          </div>
+          <p class="text-gray-700">{respuesta}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const beneficios = [
+  {
+    title: 'cPanel intuitivo',
+    description: 'Administra tu sitio web, correos y bases de datos con el panel más usado en la industria.',
+    icon: 'mdi:server'
+  },
+  {
+    title: '+380 aplicaciones',
+    description: 'Instala WordPress, Joomla, Magento y más con solo unos clics.',
+    icon: 'mdi:application'
+  },
+  {
+    title: 'Certificados SSL gratis',
+    description: 'Protege tu sitio y mejora tu posicionamiento en buscadores.',
+    icon: 'mdi:shield-check'
+  },
+  {
+    title: 'CloudLinux',
+    description: 'Sistema operativo optimizado para hosting compartido, con mayor estabilidad y seguridad.',
+    icon: 'mdi:linux'
+  },
+  {
+    title: 'Dominio gratis',
+    description: 'Obtén un dominio sin costo al contratar tu plan anual.',
+    icon: 'mdi:domain'
+  },
+  {
+    title: 'Correo ilimitado',
+    description: 'Crea cuentas de email personalizadas sin límite, incluidas en todos los planes.',
+    icon: 'mdi:email-outline'
+  }
+]
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4">Todos nuestros planes incluyen</h2>
+    <p class="text-lg text-gray-700 text-center mb-12">Funciones esenciales para tu sitio web, sin costos ocultos.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {beneficios.map(({ title, description, icon }) => (
+        <div class="border-l-4 border-orange-500 bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+          <div class="flex items-center gap-4 mb-4">
+            <Icon name={icon} class="text-orange-500 text-3xl" />
+            <h3 class="text-xl font-semibold text-gray-900">{title}</h3>
+          </div>
+          <p class="text-gray-700">{description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
