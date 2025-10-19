@@ -1,0 +1,45 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const preguntas = [
+  {
+    icon: 'mdi:help-circle-outline',
+    pregunta: '¿Qué es el Reseller Hosting?',
+    respuesta: 'Es un servicio que te permite revender alojamiento web a tus propios clientes, gestionando cuentas independientes desde un panel centralizado.'
+  },
+  {
+    icon: 'mdi:folder-cog-outline',
+    pregunta: '¿Qué es WHM y cómo se usa?',
+    respuesta: 'WHM (Web Host Manager) es el panel que te permite crear, administrar y personalizar cuentas cPanel para tus clientes de forma profesional.'
+  },
+  {
+    icon: 'mdi:cash-multiple',
+    pregunta: '¿Puedo cobrar a mis clientes directamente?',
+    respuesta: 'Sí. Puedes establecer tus propios precios y usar herramientas como WHMCS para automatizar pagos, facturación y soporte técnico.'
+  },
+  {
+    icon: 'mdi:shield-check',
+    pregunta: '¿Mis clientes tendrán SSL y correo incluido?',
+    respuesta: 'Todos los planes incluyen certificados SSL gratuitos y correo ilimitado para cada cuenta cPanel que crees.'
+  }
+]
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4">Preguntas frecuentes</h2>
+    <p class="text-lg text-gray-700 text-center mb-12">Resolvemos tus dudas más comunes sobre nuestros servicios de hosting.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {preguntas.map(({ icon, pregunta, respuesta }) => (
+        <div class="border-l-4 border-orange-500 bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+          <div class="flex items-center gap-4 mb-4">
+            <Icon name={icon} class="text-orange-500 text-3xl" />
+            <h3 class="text-xl font-semibold text-gray-900">{pregunta}</h3>
+          </div>
+          <p class="text-gray-700">{respuesta}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
