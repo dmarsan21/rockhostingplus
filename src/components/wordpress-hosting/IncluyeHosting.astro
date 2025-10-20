@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const beneficios = [
+  {
+    title: 'Instalador WordPress',
+    description: 'Instala WordPress en segundos con solo unos clics. Ideal para blogs, tiendas y sitios corporativos.',
+    icon: 'mdi:wordpress'
+  },
+  {
+    title: 'Copias de seguridad automáticas',
+    description: 'Tu sitio se respalda diariamente para que puedas restaurarlo fácilmente en caso de imprevistos.',
+    icon: 'mdi:backup-restore'
+  },
+  {
+    title: 'Actualizaciones automáticas',
+    description: 'Mantén tu WordPress, plugins y temas siempre al día sin intervención manual.',
+    icon: 'mdi:update'
+  },
+  {
+    title: 'Certificado SSL gratis',
+    description: 'Protege tu sitio y mejora tu posicionamiento en buscadores con conexión segura HTTPS.',
+    icon: 'mdi:shield-check'
+  },
+  {
+    title: 'Almacenamiento optimizado',
+    description: 'Espacio SSD para mayor velocidad de carga y mejor experiencia de usuario.',
+    icon: 'mdi:harddisk'
+  },
+  {
+    title: 'Soporte especializado 24/7',
+    description: 'Nuestro equipo conoce WordPress a fondo y está listo para ayudarte en cualquier momento.',
+    icon: 'mdi:headset'
+  }
+]
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4">Todos nuestros planes incluyen</h2>
+    <p class="text-lg text-gray-700 text-center mb-12">Funciones esenciales para tu sitio web, sin costos ocultos.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {beneficios.map(({ title, description, icon }) => (
+        <div class="border-l-4 border-orange-500 bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+          <div class="flex items-center gap-4 mb-4">
+            <Icon name={icon} class="text-orange-500 text-3xl" />
+            <h3 class="text-xl font-semibold text-gray-900">{title}</h3>
+          </div>
+          <p class="text-gray-700">{description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
