@@ -27,10 +27,23 @@
       </div>
 
       <a href="/dominios" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Dominios</a>
-      <a href="/contacto" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Contacto</a>
+
+      <!-- Contacto con submenú -->
+      <div class="relative group">
+        <button class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">
+          Contacto
+        </button>
+        <div class="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-50">
+          <ul class="py-2">
+            <li><a href="/contacto/quienes-somos" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Quiénes somos</a></li>
+            <li><a href="/contacto/diseno-web" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Diseño de páginas web</a></li>
+            <li><a href="/contacto/contacto" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
       <a href="/blog" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Blog</a>
-      <a href="https://tudominio.com/whmcs"
-        class="bg-orange-500 text-white font-semibold h-10 px-4 rounded hover:bg-orange-600 transition duration-200 flex items-center">
+      <a href="#" class="bg-orange-500 text-white font-semibold h-10 px-4 rounded hover:bg-orange-600 transition duration-200 flex items-center">
         Login
       </a>
     </nav>
@@ -53,10 +66,18 @@
       <a href="/hosting/reseller-hosting" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Reseller Hosting</a>
       <a href="/hosting/wordpress-hosting" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">WordPress Hosting</a>
     </div>
+
+    <!-- Contacto expandido en mobile -->
+    <div class="py-2">
+      <span class="block text-gray-700 font-medium mb-1">Contacto</span>
+      <a href="/contacto/quienes-somos" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Quiénes somos</a>
+      <a href="/contacto/diseno-web" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Diseño de páginas web</a>
+      <a href="/contacto/contacto" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Contacto</a>
+    </div>
+
     <a href="/dominios" class="block py-2 text-gray-700 hover:text-orange-600 font-medium transition duration-200">Dominios</a>
-    <a href="/contacto" class="block py-2 text-gray-700 hover:text-orange-600 font-medium transition duration-200">Contacto</a>
     <a href="/blog" class="block py-2 text-gray-700 hover:text-orange-600 font-medium transition duration-200">Blog</a>
-    <a href="https://tudominio.com/whmcs" class="block py-2 text-white bg-orange-500 rounded text-center font-medium hover:bg-orange-600 transition duration-200">
+    <a href="#" class="block py-2 text-white bg-orange-500 rounded text-center font-medium hover:bg-orange-600 transition duration-200">
       Login
     </a>
   </div>
