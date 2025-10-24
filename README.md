@@ -44,26 +44,6 @@ Puedes usarlo, modificarlo y distribuirlo con libertad, siempre que mantengas lo
 
 ---
 
-## 🚀 ¿Qué ofrecemos?
-
-- **Diseño web personalizado** con identidad visual profesional  
-- **Hosting y dominio incluidos** por 1 año  
-- **Panel de control intuitivo** para gestión de tu sitio  
-- **Soporte técnico confiable** y asesoría estratégica  
-- **Documentación clara** para tu equipo y colaboradores  
-
----
-
-## 🧩 ¿Cómo funciona?
-
-1. **Elige tu paquete** según tus necesidades  
-2. **Recibe tu propuesta visual** con ajustes iterativos  
-3. **Validamos juntos cada sección** antes del lanzamiento  
-4. **Publicamos tu sitio** con hosting y dominio activos  
-5. **Accede a tu panel** y documentación personalizada  
-
----
-
 ## 📬 Contacto
 
 ¿Listo para profesionalizar tu presencia digital?  
