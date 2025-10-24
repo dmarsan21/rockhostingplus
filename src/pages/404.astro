@@ -1,0 +1,49 @@
+---
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>404 — Página no encontrada | Rock Hosting Plus</title>
+    <link rel="icon" href="/favicon.ico" />
+    
+  </head>
+  <body class="bg-sky-50 text-gray-800">
+
+    <!-- Página 404 -->
+    <main class="min-h-screen flex items-center justify-center px-4 py-20">
+      <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <!-- Columna izquierda: personaje ilustrado -->
+        <div class="flex justify-center">
+          <img src="/images/404.png" alt="Personaje estresado Rock Hosting Plus"
+            class="w-full max-w-md md:max-w-lg object-contain" />
+        </div>
+
+        <!-- Columna derecha: texto institucional -->
+        <div class="text-center md:text-left">
+          <h1 class="text-5xl font-extrabold text-orange-500 mb-4 drop-shadow-md">
+            404 — Página no encontrada
+          </h1>
+          <p class="text-gray-700 text-lg mb-6">
+            Parece que esta página se ha perdido entre los cables del servidor. Pero no te preocupes, tu hosting sigue firme. Puedes volver al inicio o explorar nuestros servicios.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="/" class="bg-sky-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-sky-700 hover:scale-105 transition duration-300">
+              Ir al inicio
+            </a>
+            <a href="/hosting/web-hosting" class="bg-white border border-sky-600 text-sky-600 px-6 py-3 rounded-md font-semibold hover:bg-sky-100 transition duration-300">
+              Ver servicios
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </body>
+</html>
