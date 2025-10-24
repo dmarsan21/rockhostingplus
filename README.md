@@ -1,46 +1,72 @@
-# Astro Starter Kit: Basics
+# 🪨 Rock Hosting Plus
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+**Tu plataforma modular de hosting y diseño web con garantía institucional.**  
+Incluye dominio + hosting por 1 año en todos los paquetes de diseño.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Sitio Plantilla WEB para servicio de Hosting, responsive
+---
 
-## 🚀 Project Structure
+## ✍️ Autor
 
-Inside of your Astro project, you'll see the following folders and files:
+**DEVMARSAN** — Diseño, desarrollo y documentación  
+[rockhostingplus.com](https://rockhostingplus.com)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🧪 Stack tecnológico
 
-## 🧞 Commands
+- [Astro](https://astro.build/) — Framework moderno para sitios rápidos y accesibles
+- [Tailwind CSS](https://tailwindcss.com/) — Utilidades para diseño responsivo y modular
+- [PNPM](https://pnpm.io/) — Gestor de paquetes eficiente
+- [MDI Icons](https://pictogrammers.com/library/mdi/) — Iconografía profesional
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
+## 🛠️ Comandos de desarrollo
+
+Todos los comandos se ejecutan desde la raíz del proyecto, en una terminal:
+
+| Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| `pnpm install`            | Instala las dependencias                         |
+| `pnpm dev`                | Inicia el servidor local en `localhost:4321`     |
+| `pnpm build`              | Compila el sitio para producción en `./dist/`    |
+| `pnpm preview`            | Previsualiza el sitio compilado localmente       |
+| `pnpm astro ...`          | Ejecuta comandos CLI como `astro add`, `astro check` |
+| `pnpm astro -- --help`    | Muestra ayuda para usar Astro CLI                |
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**.  
+Puedes usarlo, modificarlo y distribuirlo con libertad, siempre que mantengas los créditos.
+
+---
+
+## 🚀 ¿Qué ofrecemos?
+
+- **Diseño web personalizado** con identidad visual profesional  
+- **Hosting y dominio incluidos** por 1 año  
+- **Panel de control intuitivo** para gestión de tu sitio  
+- **Soporte técnico confiable** y asesoría estratégica  
+- **Documentación clara** para tu equipo y colaboradores  
+
+---
+
+## 🧩 ¿Cómo funciona?
+
+1. **Elige tu paquete** según tus necesidades  
+2. **Recibe tu propuesta visual** con ajustes iterativos  
+3. **Validamos juntos cada sección** antes del lanzamiento  
+4. **Publicamos tu sitio** con hosting y dominio activos  
+5. **Accede a tu panel** y documentación personalizada  
+
+---
+
+## 📬 Contacto
+
+¿Listo para profesionalizar tu presencia digital?  
+Escríbenos a **contacto@rockhostingplus.com** o visita [rockhostingplus.com](https://rockhostingplus.com)
+
+---
