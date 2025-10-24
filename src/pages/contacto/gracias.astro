@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon/components';
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/gracias/Hero.astro';
+---
+
+<Layout title="Gracias por tu mensaje | Rock Hosting Plus">
+  <!-- Hero institucional -->
+   <Hero />
+  <!-- <section class="bg-sky-50 py-24 mt-12 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <Icon name="mdi:email-check-outline" class="text-sky-600 text-6xl mb-6 mx-auto" />
+      <h2 class="text-4xl font-bold text-sky-700 mb-4">¡Tu mensaje está en buenas manos!</h2>
+      <p class="text-gray-700 text-lg">
+        Nuestro equipo revisa cada consulta con atención. Muy pronto recibirás una respuesta personalizada.
+      </p>
+    </div>
+  </section> -->
+
+  <!-- Confirmación -->
+  <!-- Confirmación institucional -->
+  <section class="text-center py-20 px-4 bg-white">
+    <div class="max-w-xl mx-auto">
+      <Icon name="mdi:check-circle-outline" class="text-green-500 text-6xl mb-6 mx-auto" />
+      <h2 class="text-3xl md:text-4xl font-extrabold text-sky-700 mb-4">
+        ¡Tu mensaje ha sido recibido con éxito!
+      </h2>
+      <p class="text-gray-700 text-lg mb-6">
+        En Rock Hosting Plus valoramos cada consulta. Nuestro equipo ya está revisando tu mensaje con atención y compromiso. Te responderemos en menos de 24 horas.
+      </p>
+      <a href="/" class="inline-block bg-sky-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-sky-700 hover:scale-105 transition duration-300">
+        Volver al inicio
+      </a>
+    </div>
+  </section>
+</Layout>
