@@ -1,5 +1,13 @@
 ---
+// Astro imports
+import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
+
+// Avatares optimizados
+import avatarElizabeth from '../../assets/images/avatar.png';
+import avatarConstrucciones from '../../assets/images/avatar3.png';
+import avatarCursos from '../../assets/images/avatar1.png';
+import avatarModa from '../../assets/images/avatar2.png';
 ---
 
 <section class="bg-white py-20">
@@ -14,7 +22,14 @@ import { Icon } from 'astro-icon/components';
         <p class="text-sm text-gray-700 mb-4">
           “Contraté el servicio de diseño web y fue un servicio rápido y siempre estuvieron pendientes.”
         </p>
-        <img src="/images/avatar.png" alt="Elizabeth Hernández" class="h-20 w-20 rounded-full object-cover mb-2" />
+        <Image
+          src={avatarElizabeth}
+          alt="Elizabeth Hernández"
+          width={80}
+          height={80}
+          class="h-20 w-20 rounded-full object-cover mb-2"
+          loading="lazy"
+        />
         <p class="font-semibold text-gray-800">Elizabeth Hernández</p>
         <span class="text-xs text-gray-500 mb-2">Cliente</span>
         <div class="flex gap-1">
@@ -32,7 +47,14 @@ import { Icon } from 'astro-icon/components';
         <p class="text-sm text-gray-700 mb-4">
           “Nuestra empresa siempre en línea, con nuestra página web hemos incrementado nuestros clientes.”
         </p>
-        <img src="/images/avatar3.png" alt="Construcciones" class="h-20 w-20 rounded-full object-cover mb-2" />
+        <Image
+          src={avatarConstrucciones}
+          alt="Construcciones"
+          width={80}
+          height={80}
+          class="h-20 w-20 rounded-full object-cover mb-2"
+          loading="lazy"
+        />
         <p class="font-semibold text-gray-800">Construcciones</p>
         <span class="text-xs text-gray-500 mb-2">Cliente</span>
         <div class="flex gap-1">
@@ -50,7 +72,14 @@ import { Icon } from 'astro-icon/components';
         <p class="text-sm text-gray-700 mb-4">
           “Ahora tenemos más alumnos por ofrecer nuestros cursos en línea, indispensable tener un sitio web.”
         </p>
-        <img src="/images/avatar1.png" alt="Cursos Online" class="h-20 w-20 rounded-full object-cover mb-2" />
+        <Image
+          src={avatarCursos}
+          alt="Cursos Online"
+          width={80}
+          height={80}
+          class="h-20 w-20 rounded-full object-cover mb-2"
+          loading="lazy"
+        />
         <p class="font-semibold text-gray-800">Cursos Online</p>
         <span class="text-xs text-gray-500 mb-2">Cliente</span>
         <div class="flex gap-1">
@@ -68,7 +97,14 @@ import { Icon } from 'astro-icon/components';
         <p class="text-sm text-gray-700 mb-4">
           “Recomiendo el diseño de tienda en línea, aumentaron mis ventas, ya que está disponible las 24 horas.”
         </p>
-        <img src="/images/avatar2.png" alt="Ropa de Moda" class="h-20 w-20 rounded-full object-cover mb-2" />
+        <Image
+          src={avatarModa}
+          alt="Ropa de Moda"
+          width={80}
+          height={80}
+          class="h-20 w-20 rounded-full object-cover mb-2"
+          loading="lazy"
+        />
         <p class="font-semibold text-gray-800">Ropa de Moda</p>
         <span class="text-xs text-gray-500 mb-2">Cliente</span>
         <div class="flex gap-1">

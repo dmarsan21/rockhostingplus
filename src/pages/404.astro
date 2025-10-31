@@ -1,5 +1,8 @@
 ---
+// Astro imports
 import "../styles/global.css";
+import { Image } from 'astro:assets';
+import personaje404 from '../assets/images/404.png';
 ---
 
 <!DOCTYPE html>
@@ -10,7 +13,6 @@ import "../styles/global.css";
     <meta name="robots" content="noindex" />
     <title>404 — Página no encontrada | Rock Hosting Plus</title>
     <link rel="icon" href="/favicon.ico" />
-    
   </head>
   <body class="bg-sky-50 text-gray-800">
 
@@ -18,10 +20,16 @@ import "../styles/global.css";
     <main class="min-h-screen flex items-center justify-center px-4 py-20">
       <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        <!-- Columna izquierda: personaje ilustrado -->
+        <!-- Columna izquierda: personaje ilustrado optimizado -->
         <div class="flex justify-center">
-          <img src="/images/404.png" alt="Personaje estresado Rock Hosting Plus"
-            class="w-full max-w-md md:max-w-lg object-contain" />
+          <Image
+            src={personaje404}
+            alt="Personaje estresado Rock Hosting Plus"
+            width={500}
+            height={500}
+            class="w-full max-w-md md:max-w-lg object-contain"
+            loading="lazy"
+          />
         </div>
 
         <!-- Columna derecha: texto institucional -->

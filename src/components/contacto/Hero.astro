@@ -1,11 +1,24 @@
 ---
-
+// Astro imports
+import { Image } from 'astro:assets';
+import fondoContacto from '../../assets/images/fondo-hero.jpg';
+import personajeContacto from '../../assets/images/personaje-hero.png';
 ---
 
-<section
-  class="relative min-h-[70vh] pt-20 flex items-center bg-cover bg-center"
-  style="background-image: url('/images/fondo-hero.jpg');"
->
+<section class="relative min-h-[70vh] pt-20 flex items-center overflow-hidden">
+  <!-- Fondo como imagen absoluta optimizada -->
+  <div class="absolute inset-0 -z-10">
+    <Image
+      src={fondoContacto}
+      alt="Fondo institucional para la sección de contacto"
+      width={1920}
+      height={1080}
+      class="w-full h-full object-cover object-center"
+      loading="lazy"
+    />
+  </div>
+
+  <!-- Contenido -->
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
     
     <!-- Texto -->
@@ -17,18 +30,27 @@
         En Rock Hosting Plus estamos listos para escucharte, entender tus necesidades y ofrecerte soluciones web con diseño profesional, seguridad y soporte humano. Tu presencia digital merece atención personalizada.
       </p>
 
-      <!-- Botón único -->
-      <!-- <div class="mt-6 flex justify-center md:justify-start">
+      <!-- Botón único (comentado) -->
+      <!--
+      <div class="mt-6 flex justify-center md:justify-start">
         <a href="#formulario-contacto"
           class="bg-sky-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-sky-700 hover:scale-105 hover:shadow-xl transition duration-300">
           Enviar mensaje
         </a>
-      </div> -->
+      </div>
+      -->
     </div>
 
-    <!-- Imagen -->
+    <!-- Imagen del personaje optimizada -->
     <div class="md:w-1/2 flex justify-center">
-      <img src="/images/personaje-hero.png" alt="Ilustración contacto Rock Hosting" class="max-h-[80vh] w-full max-w-md object-contain" />
+      <Image
+        src={personajeContacto}
+        alt="Ilustración institucional de Rock Hosting Plus para la sección de contacto"
+        width={400}
+        height={400}
+        class="max-h-[80vh] w-full max-w-md object-contain"
+        loading="lazy"
+      />
     </div>
   </div>
 </section>

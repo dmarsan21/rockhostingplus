@@ -1,13 +1,22 @@
 ---
-// src/components/Footer.astro
+import { Image } from 'astro:assets';
+import logoFooter from '../assets/images/rock-logo-footer.png';
 ---
+
 <footer class="bg-gray-800 text-neutral-300 text-sm mt-0">
   <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
     
     <!-- Branding -->
     <div>
       <a href="/">
-        <img src="/images/rock-logo-footer.png" alt="Rock Hosting Plus" class="w-30" />
+        <Image
+          src={logoFooter}
+          alt="Logo institucional Rock Hosting Plus"
+          width={160}
+          height={48}
+          class="w-30"
+          loading="lazy"
+        />
       </a>
       <p class="leading-relaxed text-neutral-200 mt-2">
         Soluciones de hosting seguras, rápidas y escalables. Tu web en buenas manos.

@@ -1,5 +1,7 @@
 ---
-
+// Astro imports
+import { Image } from 'astro:assets';
+import personajeCTA from '../../assets/images/contacto.png';
 ---
 
 <section class="bg-gradient-to-r from-sky-600 to-indigo-700 text-white py-20">
@@ -18,9 +20,16 @@
       </a>
     </div>
 
-    <!-- Personaje institucional -->
+    <!-- Personaje institucional optimizado -->
     <div class="md:w-1/3 flex justify-center">
-      <img src="/images/contacto.png" alt="Personaje Rock Hosting Plus" class="max-w-xs w-full object-contain" />
+      <Image
+        src={personajeCTA}
+        alt="Personaje institucional de Rock Hosting Plus en sección CTA"
+        width={300}
+        height={300}
+        class="max-w-xs w-full object-contain"
+        loading="lazy"
+      />
     </div>
 
   </div>

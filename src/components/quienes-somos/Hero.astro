@@ -1,7 +1,24 @@
-<section
-  class="relative min-h-[70vh] pt-20 flex items-center bg-cover bg-center"
-  style="background-image: url('/images/fondo-hero.jpg');"
->
+---
+// Astro imports
+import { Image } from 'astro:assets';
+import fondoQuienesSomos from '../../assets/images/fondo-hero.jpg';
+import personajeQuienesSomos from '../../assets/images/personaje-hero.png';
+---
+
+<section class="relative min-h-[70vh] pt-20 flex items-center overflow-hidden">
+  <!-- Fondo como imagen absoluta optimizada -->
+  <div class="absolute inset-0 -z-10">
+    <Image
+      src={fondoQuienesSomos}
+      alt="Fondo institucional para la sección Quienes Somos"
+      width={1920}
+      height={1080}
+      class="w-full h-full object-cover object-center"
+      loading="lazy"
+    />
+  </div>
+
+  <!-- Contenido -->
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
     
     <!-- Texto -->
@@ -26,9 +43,16 @@
       </div>
     </div>
 
-    <!-- Imagen -->
+    <!-- Imagen del personaje optimizada -->
     <div class="md:w-1/2 flex justify-center">
-      <img src="/images/personaje-hero.png" alt="Rock Hosting Illustration" class="max-h-[80vh] w-full max-w-md object-contain" />
+      <Image
+        src={personajeQuienesSomos}
+        alt="Ilustración institucional de Rock Hosting Plus para la sección Quienes Somos"
+        width={400}
+        height={400}
+        class="max-h-[80vh] w-full max-w-md object-contain"
+        loading="lazy"
+      />
     </div>
   </div>
 </section>

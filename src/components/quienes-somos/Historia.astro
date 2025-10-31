@@ -1,13 +1,22 @@
 ---
-
+// Astro imports
+import { Image } from 'astro:assets';
+import personajeHistoria from '../../assets/images/about.png';
 ---
 
 <section class="bg-white py-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
     
-    <!-- Imagen izquierda -->
+    <!-- Imagen izquierda optimizada -->
     <div class="md:w-1/2 flex justify-center">
-      <img src="/images/about.png" alt="Personaje Rock Hosting Plus" class="max-w-sm w-full object-contain" />
+      <Image
+        src={personajeHistoria}
+        alt="Personaje institucional de Rock Hosting Plus para la sección Historia"
+        width={400}
+        height={400}
+        class="max-w-sm w-full object-contain"
+        loading="lazy"
+      />
     </div>
 
     <!-- Texto derecha -->
