@@ -5,8 +5,8 @@ import logoHeader from '../assets/images/rock-logo-header.png';
 
 <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-white transition-all duration-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-    
-    <!-- Logo optimizado -->
+
+    <!-- Logo -->
     <a href="/" class="flex items-center">
       <Image
         src={logoHeader}
@@ -20,10 +20,9 @@ import logoHeader from '../assets/images/rock-logo-header.png';
 
     <!-- Desktop Nav -->
     <nav class="hidden md:flex items-center justify-end space-x-6">
-      <!-- Inicio -->
       <a href="/" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Inicio</a>
 
-      <!-- Hosting con submenú -->
+      <!-- Hosting -->
       <div class="relative group">
         <button class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">
           Hosting
@@ -32,12 +31,24 @@ import logoHeader from '../assets/images/rock-logo-header.png';
           <ul class="py-2">
             <li><a href="/hosting/web-hosting" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Web Hosting</a></li>
             <li><a href="/hosting/wordpress-hosting" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">WordPress Hosting</a></li>
-            <li><a href="/hosting/reseller-hosting" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Reseller Hosting</a></li>
           </ul>
         </div>
       </div>
 
-      <!-- Dominios con submenú -->
+      <!-- Reseller -->
+      <div class="relative group">
+        <button class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">
+          Reseller
+        </button>
+        <div class="absolute left-0 mt-2 w-52 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-50">
+          <ul class="py-2">
+            <li><a href="/hosting/reseller-hosting" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Reseller Hosting (cPanel)</a></li>
+            <li><a href="/hosting/master-reseller" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Master Reseller (WHM)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Dominios -->
       <div class="relative group">
         <button class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">
           Dominios
@@ -50,7 +61,7 @@ import logoHeader from '../assets/images/rock-logo-header.png';
         </div>
       </div>
 
-      <!-- Contacto con submenú -->
+      <!-- Contacto -->
       <div class="relative group">
         <button class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">
           Contacto
@@ -64,10 +75,8 @@ import logoHeader from '../assets/images/rock-logo-header.png';
         </div>
       </div>
 
-      <!-- Blog comentado -->
       <a href="/blog" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Soporte</a>
 
-      <!-- Login -->
       <a href="#" class="bg-orange-500 text-white font-semibold h-10 px-4 rounded hover:bg-orange-600 transition duration-200 flex items-center">
         Login
       </a>
@@ -76,30 +85,31 @@ import logoHeader from '../assets/images/rock-logo-header.png';
     <!-- Mobile Menu Button -->
     <button id="menu-toggle" class="md:hidden text-orange-600 focus:outline-none">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
       </svg>
     </button>
   </div>
 
   <!-- Mobile Nav -->
   <div id="mobile-menu" class="hidden md:hidden bg-white/90 border-t border-orange-300 px-4 pb-4">
-    <!-- Hosting expandido en mobile -->
     <div class="py-2">
       <span class="block text-gray-700 font-medium mb-1">Hosting</span>
       <a href="/hosting/web-hosting" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Web Hosting</a>
       <a href="/hosting/wordpress-hosting" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">WordPress Hosting</a>
-      <a href="/hosting/reseller-hosting" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Reseller Hosting</a>
     </div>
 
-    <!-- Dominios expandido en mobile -->
+    <div class="py-2">
+      <span class="block text-gray-700 font-medium mb-1">Reseller</span>
+      <a href="/hosting/reseller-hosting" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Reseller Hosting (WHM)</a>
+      <a href="/hosting/master-reseller" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Master Reseller</a>
+    </div>
+
     <div class="py-2">
       <span class="block text-gray-700 font-medium mb-1">Dominios</span>
       <a href="https://tudominio.com/whmcs/cart.php?a=add&domain=register" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Contratar</a>
       <a href="https://tudominio.com/whmcs/cart.php?a=add&domain=transfer" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Transferir</a>
     </div>
 
-    <!-- Contacto expandido en mobile -->
     <div class="py-2">
       <span class="block text-gray-700 font-medium mb-1">Contacto</span>
       <a href="/contacto/quienes-somos" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Quiénes somos</a>
@@ -107,7 +117,6 @@ import logoHeader from '../assets/images/rock-logo-header.png';
       <a href="/contacto/contacto" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Contacto</a>
     </div>
 
-    <!-- Blog comentado -->
     <a href="/blog" class="block py-2 text-gray-700 hover:text-orange-600 font-medium transition duration-200">Soporte</a>
 
     <a href="#" class="block py-2 text-white bg-orange-500 rounded text-center font-medium hover:bg-orange-600 transition duration-200">
