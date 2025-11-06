@@ -19,7 +19,10 @@ import logoHeader from '../assets/images/rock-logo-header.png';
     </a>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex items-center space-x-6">
+    <nav class="hidden md:flex items-center justify-end space-x-6">
+      <!-- Inicio -->
+      <a href="/" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Inicio</a>
+
       <!-- Hosting con submenú -->
       <div class="relative group">
         <button class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">
@@ -34,7 +37,18 @@ import logoHeader from '../assets/images/rock-logo-header.png';
         </div>
       </div>
 
-      <a href="/dominios" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Dominios</a>
+      <!-- Dominios con submenú -->
+      <div class="relative group">
+        <button class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">
+          Dominios
+        </button>
+        <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-50">
+          <ul class="py-2">
+            <li><a href="https://tudominio.com/whmcs/cart.php?a=add&domain=register" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Contratar</a></li>
+            <li><a href="https://tudominio.com/whmcs/cart.php?a=add&domain=transfer" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Transferir</a></li>
+          </ul>
+        </div>
+      </div>
 
       <!-- Contacto con submenú -->
       <div class="relative group">
@@ -50,7 +64,10 @@ import logoHeader from '../assets/images/rock-logo-header.png';
         </div>
       </div>
 
-      <a href="/blog" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Blog</a>
+      <!-- Blog comentado -->
+      <a href="/blog" class="text-gray-900 hover:text-orange-600 font-medium transition duration-200 hover:underline underline-offset-4">Soporte</a>
+
+      <!-- Login -->
       <a href="#" class="bg-orange-500 text-white font-semibold h-10 px-4 rounded hover:bg-orange-600 transition duration-200 flex items-center">
         Login
       </a>
@@ -75,6 +92,13 @@ import logoHeader from '../assets/images/rock-logo-header.png';
       <a href="/hosting/wordpress-hosting" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">WordPress Hosting</a>
     </div>
 
+    <!-- Dominios expandido en mobile -->
+    <div class="py-2">
+      <span class="block text-gray-700 font-medium mb-1">Dominios</span>
+      <a href="https://tudominio.com/whmcs/cart.php?a=add&domain=register" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Contratar</a>
+      <a href="https://tudominio.com/whmcs/cart.php?a=add&domain=transfer" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Transferir</a>
+    </div>
+
     <!-- Contacto expandido en mobile -->
     <div class="py-2">
       <span class="block text-gray-700 font-medium mb-1">Contacto</span>
@@ -83,8 +107,9 @@ import logoHeader from '../assets/images/rock-logo-header.png';
       <a href="/contacto/contacto" class="block pl-4 py-1 text-gray-700 hover:text-orange-600 text-sm">Contacto</a>
     </div>
 
-    <a href="/dominios" class="block py-2 text-gray-700 hover:text-orange-600 font-medium transition duration-200">Dominios</a>
-    <a href="/blog" class="block py-2 text-gray-700 hover:text-orange-600 font-medium transition duration-200">Blog</a>
+    <!-- Blog comentado -->
+    <a href="/blog" class="block py-2 text-gray-700 hover:text-orange-600 font-medium transition duration-200">Soporte</a>
+
     <a href="#" class="block py-2 text-white bg-orange-500 rounded text-center font-medium hover:bg-orange-600 transition duration-200">
       Login
     </a>

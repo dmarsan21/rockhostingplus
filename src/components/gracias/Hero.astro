@@ -1,7 +1,23 @@
-<section
-  class="relative min-h-[70vh] pt-20 flex items-center bg-cover bg-center"
-  style="background-image: url('/images/fondo-hero.jpg');"
->
+---
+// Astro imports
+import { Image } from 'astro:assets';
+import fondoGracias from '../../assets/images/fondo-hero.jpg';
+import personajeGracias from '../../assets/images/web-hosting2.png';
+---
+
+<section class="relative min-h-[70vh] pt-20 flex items-center overflow-hidden">
+  <!-- Fondo como imagen absoluta optimizada -->
+  <div class="absolute inset-0 -z-10">
+    <Image
+      src={fondoGracias}
+      alt="Fondo institucional para la sección de agradecimiento"
+      width={1920}
+      height={1080}
+      class="w-full h-full object-cover object-center"
+      loading="lazy"
+    />
+  </div>
+
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
     
     <!-- Texto -->
@@ -22,9 +38,16 @@
       </div>
     </div>
 
-    <!-- Imagen -->
+    <!-- Imagen del personaje optimizada -->
     <div class="md:w-1/2 flex justify-center">
-      <img src="/images/web-hosting.png" alt="Ilustración agradecimiento Rock Hosting" class="max-h-[80vh] w-full max-w-md object-contain" />
+      <Image
+        src={personajeGracias}
+        alt="Ilustración institucional de Rock Hosting Plus para la sección de agradecimiento"
+        width={400}
+        height={400}
+        class="max-h-[80vh] w-full max-w-md object-contain"
+        loading="lazy"
+      />
     </div>
   </div>
 </section>
