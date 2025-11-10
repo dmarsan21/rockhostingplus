@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const beneficios = [
+  {
+    title: 'Panel WHM multinivel',
+    description: 'Administra cuentas Reseller y cPanel desde un solo panel, ideal para proveedores que escalan.',
+    icon: 'mdi:server'
+  },
+  {
+    title: 'Marca blanca total',
+    description: 'Personaliza tu servicio con tu propia identidad. Tus clientes no verán referencias a Rock Hosting Plus.',
+    icon: 'mdi:palette'
+  },
+  {
+    title: 'Certificados SSL gratis',
+    description: 'Incluidos en todos los sitios que hospedes. Seguridad sin costo adicional para ti y tus clientes.',
+    icon: 'mdi:shield-check'
+  },
+  {
+    title: 'CloudLinux optimizado',
+    description: 'Aislamiento de cuentas para mayor estabilidad, rendimiento y seguridad en entornos compartidos.',
+    icon: 'mdi:linux'
+  },
+  {
+    title: 'WHMCS opcional',
+    description: 'Automatiza la facturación, gestión de clientes y soporte técnico. Disponible por US$15/mes.',
+    icon: 'mdi:cash-multiple'
+  },
+  {
+    title: 'Correo ilimitado',
+    description: 'Ofrece cuentas de email personalizadas a tus clientes, sin restricciones ni costos adicionales.',
+    icon: 'mdi:email-outline'
+  }
+];
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4">Todos nuestros planes Master incluyen</h2>
+    <p class="text-lg text-gray-700 text-center mb-12">Funciones esenciales para revender con escalabilidad, sin costos ocultos.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {beneficios.map(({ title, description, icon }) => (
+        <div class="border-l-4 border-orange-500 bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition">
+          <div class="flex items-center gap-4 mb-4">
+            <Icon name={icon} class="text-orange-500 text-3xl" />
+            <h3 class="text-xl font-semibold text-gray-900">{title}</h3>
+          </div>
+          <p class="text-gray-700">{description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
